@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "static.css" %}">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1 id="head">This is the home Page</h1>
+
+    <br><button type="button" name="button" onclick="change_name()">Change the name of the page</button>
+
+    <br><img src="{% static "lion.jpg" %}" alt="No image found"><br>
+
+    <a href="{% url "contact" %}">Click for contact page</a><br>
+    <a href="{% url "results" %}">Click for results page</a>
+
+    <script type="text/javascript" src="{% static "static.js" %}">
+    </script>
+  </body>
+</html>

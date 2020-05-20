@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact page</title>
+  </head>
+  <body>
+    <h1>Contact Page</h1>
+
+    <a href="{% url "home" %}">Click for home page</a>
+
+    <form action="{% url "results" %}">
+      {% csrf_token %}
+      <input type="text" name="txt">
+      <input type="submit" name="" value="Click for formatting">
+    </form>
+
+  </body>
+</html>
